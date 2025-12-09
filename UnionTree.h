@@ -28,7 +28,7 @@ class ParTree{
             virtual ~ParTree();
             void Union(int i,int j);
             bool Diff(int i,int j);
-            
+            ParTreeNode<T>* FindPC(ParTreeNode<T>* node);
 };
 
 // ---- ParTreeNode inline definitions ----

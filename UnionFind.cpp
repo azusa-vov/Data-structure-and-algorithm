@@ -33,3 +33,12 @@ void ParTree<T>::Union(int i,int j){
             }
       }
 }
+template<class T>
+
+ParTreeNode<T>* ParTree<T>::FindPC(ParTreeNode<T>* node){
+      if(node->getParent()==NULL){
+            return node;//本身就是根节点
+      }
+      node->setParent(FindPC(node->getParent())); //所有节点（分叉）直接挂到根节点下
+      return node->getParent();
+}
