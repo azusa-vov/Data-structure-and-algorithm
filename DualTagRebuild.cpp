@@ -4,6 +4,7 @@
 #include <vector>
 
 struct Node {
+    //真实结点
     std::string info;              // 节点数据
     Node* left;                    // 最左孩子
     Node* right;                   // 右兄弟
