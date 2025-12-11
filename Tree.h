@@ -1,6 +1,7 @@
 #ifndef TREE_H
 #define TREE_H
 #include "TreeNode.h"
+
 template<class T>
 class Tree{
 public:
@@ -16,6 +17,8 @@ public:
       void RootLastTraverse(TreeNode<T>* node);
       void WidthTraverse(TreeNode<T>* root);
       void DestroyNodes(TreeNode<T>* root);
+      Tree(DualTagTreeNode<T>* nodeArray,int count);
+
 
 private:
       TreeNode<T>* root;
